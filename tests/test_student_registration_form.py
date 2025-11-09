@@ -8,29 +8,29 @@ def test_student_registration_form(setup_browser):
         registration_page.open()
 
     # WHEN
-    with allure.step("Заполняем First Name={first_name}"):
+    with allure.step("Заполняем First Name"):
         registration_page.fill_first_name('Anna')
-    with allure.step("Заполняем Last Name={last_name}"):
+    with allure.step("Заполняем Last Name"):
         registration_page.fill_last_name('Kostina')
-    with allure.step("Заполняем Email={email}"):
+    with allure.step("Заполняем Email"):
         registration_page.fill_email('111name@example.com')
-    with allure.step("Заполняем Gender={gender}"):
+    with allure.step("Заполняем Gender"):
         registration_page.select_gender('Female')
-    with allure.step("Заполняем Mobile={mobile}"):
+    with allure.step("Заполняем Mobile"):
         registration_page.mobile_number('8788888888')
-    with allure.step("Заполняем Date of Birth={date}"):
+    with allure.step("Заполняем Date of Birth"):
         registration_page.select_date_of_birth('18 June 2025')
-    with allure.step("Заполняем Subjects={subject}"):
+    with allure.step("Заполняем Subjects"):
         registration_page.fill_subjects("Computer Science")
-    with allure.step("Заполняем Hobbies={hobbies}"):
+    with allure.step("Заполняем Hobbies"):
         registration_page.fill_hobbies('Reading')
-    with allure.step("Заполняем Picture={filename}"):
+    with allure.step("Заполняем Picture"):
         registration_page.upload_picture('duck.jpg')
-    with allure.step("Заполняем Address={address}"):
+    with allure.step("Заполняем Address"):
         registration_page.fill_address('Moscow')
-    with allure.step("Выбираем State={state}"):
+    with allure.step("Выбираем State"):
         registration_page.select_state('Uttar Pradesh')
-    with allure.step("Выбираем City={city}"):
+    with allure.step("Выбираем City"):
         registration_page.select_city('Agra')
     with allure.step("Отправляем форму"):
         registration_page.click_submit()
